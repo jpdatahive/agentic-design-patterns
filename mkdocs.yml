@@ -1,0 +1,60 @@
+site_name: Sistemas Agenticos e Design Patterns
+site_author: Seu Nome Aqui
+
+theme:
+  name: material
+  language: pt
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+    - scheme: slate
+      primary: black
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - toc.integrate
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.copy
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/seu-usuario/seu-repositorio
+
+nav:
+  - Prefácio: 00-prefacio.md
+  - Introdução:
+    - O que são Sistemas Agenticos?: 01-introducao-o-que-sao.md
+    - Componentes de um Agente: 02-componentes-agente.md
+  - Design Patterns:
+    - Reflexão: 03-padrao-reflexao.md
+    - Planejamento: 04-padrao-planejamento.md
+
+docs_dir: capitulos
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.highlight: # Habilita o destaque de sintaxe
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - attr_list
+  - md_in_html
+  - toc: # Table of Contents
+      permalink: true
